@@ -1,0 +1,41 @@
+.footer {
+    background: #001529;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-title {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .footer-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    margin: 20px 0;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  

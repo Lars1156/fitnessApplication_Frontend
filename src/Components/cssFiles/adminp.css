@@ -1,0 +1,23 @@
+/* src/pages/AdminPanel.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001529;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logout-button {
+    margin-left: auto;
+  }
+  
+  .site-layout-background {
+    background: #fff;
+  }
+  
