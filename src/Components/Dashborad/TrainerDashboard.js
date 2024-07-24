@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Button, message, Layout, Menu } from 'antd';
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 import '../cssFiles/dash.css';
 
-const { Header, Sider, Content } = Layout;
+const {  Sider, Content } = Layout;
 
 const TrainerDashboard = () => { 
+const navigate = useNavigate();
   const [trainers, setTrainers] = useState([]);
   const [bookings, setBookings] = useState([]);
 
@@ -59,14 +61,14 @@ const TrainerDashboard = () => {
   ];
 
   const handleLogout = () => {
-    // Implement your logout logic here
+    navigate('/');
     message.success('Logged out successfully');
   };
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider theme="dark">
-        <div className="logo">Gym Fitness</div>
+        <div className="dashboard-logo">User Dashboard</div>
         <Menu theme="dark" mode="vertical" defaultSelectedKeys={['1']}>
           <Menu.Item key="1">
             <Button type="link">Trainer Details</Button>
@@ -76,10 +78,7 @@ const TrainerDashboard = () => {
           </Menu.Item>
         </Menu>
       </Sider>
-      <Layout>
-        <Header className="header">
-          <h1>User Dashboard</h1>
-        </Header>
+      <Layout>  
         <Content style={{ padding: '20px' }}>
           <h2>Trainers</h2>
           <Table columns={trainerColumns} dataSource={trainers} rowKey="_id" />

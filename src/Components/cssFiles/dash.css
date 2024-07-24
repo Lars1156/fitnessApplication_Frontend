@@ -1,4 +1,23 @@
 
+.dashboard-header {
+  background: #fff;
+  padding: 0;
+  text-align: center;
+}
+
+.dashboard-logo {
+  height: 32px;
+  margin: 16px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ant-layout-sider {
+  background: #001529;
+}
+
 .trainer-dashboard {
     padding: 20px;
   }
