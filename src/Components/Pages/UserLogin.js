@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Input, Button } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
+import { GoogleOutlined, FacebookOutlined } from '@ant-design/icons';
 import '../cssFiles/login.css';
 import axios from 'axios';
 const UserLogin = () => {
@@ -28,38 +29,50 @@ const UserLogin = () => {
 
   return (
     <div className="login-container">
-    <div className="login-form-container">
-      <h2>Login</h2>
-      <Form
-        name="login"
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
-      >
-        <Form.Item
-          label="Email"
-          name="email"
-          rules={[{ required: true, message: 'Please input your email!' }]}
+      <div className="login-form-container">
+        <h2>Login</h2>
+        <Form
+          name="login"
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
         >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          label="Password"
-          name="password"
-          rules={[{ required: true, message: 'Please input your password!' }]}
-        >
-          <Input.Password />
-        </Form.Item>
-        <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Login
+          <Form.Item
+            label="Email"
+            name="email"
+            rules={[{ required: true, message: 'Please input your email!' }]}
+          >
+            <Input />
+          </Form.Item>
+          <Form.Item
+            label="Password"
+            name="password"
+            rules={[{ required: true, message: 'Please input your password!' }]}
+          >
+            <Input.Password />
+          </Form.Item>
+          <Form.Item>
+            <Button type="primary" htmlType="submit" className="login-button">
+              Login
+            </Button>
+          </Form.Item>
+        </Form>
+        <div className="social-login-buttons">
+          <Button icon={<GoogleOutlined />} className="google-login-button">
+            Login with Google
           </Button>
-        </Form.Item>
-      </Form>
+          <Button icon={<FacebookOutlined />} className="facebook-login-button">
+            Login with Facebook
+          </Button>
+        </div>
+        <div className="register-link-container">
+          <span>Don't have an account? </span>
+          <Link to="/register">
+            <Button type="link">Register</Button>
+          </Link>
+        </div>
+      </div>
+      
     </div>
-    <div className="login-image-container">
-      <img src="" alt="Gym" />
-    </div>
-  </div>
   );
 };
 
