@@ -3,6 +3,7 @@ import ScrollingReviews from '../Dashborad/ScrollingReviews';
 import Services from './Services';
 import AboutUs from './AboutUs';
 import Footer from '../Footer'
+import ContactUs from './ContactUs';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       {/* Add other homepage content here */}
       <AboutUs/>
       <Services/>
+      <ContactUs/>
       <ScrollingReviews/>
       <Footer/>
     </div>

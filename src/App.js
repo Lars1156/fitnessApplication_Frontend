@@ -9,6 +9,7 @@ import Services from './Components/Pages/Services';
 import AboutUs from './Components/Pages/AboutUs';
 import Home from './Components/Pages/Home';
 import { Footer } from 'antd/es/layout/layout';
+import ContactUs from './Components/Pages/ContactUs';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
          <Route path='/trainer_dashboard' element={<TrainerDashboard/>}/>
          <Route path='/services' element={<Services/>}/>
          <Route path='/about' element = {<AboutUs/>}/>
+         <Route path='/contact' element={<ContactUs/>}/>
          <Route path='/footer' element={<Footer/>}/>
       </Routes>
       
