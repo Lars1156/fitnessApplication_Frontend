@@ -28,46 +28,38 @@ const UserLogin = () => {
 
   return (
     <div className="login-container">
-      <div className="login-form-container">
-        <h2 className="user-login-title">User Login</h2>
-        <Form
-          name="user-login"
-          onFinish={onFinish}
-          onFinishFailed={onFinishFailed}
-          className="user-login-form"
+    <div className="login-form-container">
+      <h2>Login</h2>
+      <Form
+        name="login"
+        onFinish={onFinish}
+        onFinishFailed={onFinishFailed}
+      >
+        <Form.Item
+          label="Email"
+          name="email"
+          rules={[{ required: true, message: 'Please input your email!' }]}
         >
-          <Form.Item
-            label="Email"
-            name="email"
-            rules={[{ required: true, message: 'Please input your email!' }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            label="Password"
-            name="password"
-            rules={[{ required: true, message: 'Please input your password!' }]}
-          >
-            <Input.Password />
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit" className="user-login-form-button">
-              Login
-            </Button>
-          </Form.Item>
-          <Form.Item>
-            <Link to="/register">
-              <Button type="default" className="register-button">
-                Register
-              </Button>
-            </Link>
-          </Form.Item>
-        </Form>
-      </div>
-      {/* <div className="login-image-container">
-        <img src={loginImage} alt="Login" className="login-image" />
-      </div> */}
+          <Input />
+        </Form.Item>
+        <Form.Item
+          label="Password"
+          name="password"
+          rules={[{ required: true, message: 'Please input your password!' }]}
+        >
+          <Input.Password />
+        </Form.Item>
+        <Form.Item>
+          <Button type="primary" htmlType="submit">
+            Login
+          </Button>
+        </Form.Item>
+      </Form>
     </div>
+    <div className="login-image-container">
+      <img src="" alt="Gym" />
+    </div>
+  </div>
   );
 };
 
