@@ -10,6 +10,7 @@ import AboutUs from './Components/Pages/AboutUs';
 import Home from './Components/Pages/Home';
 import { Footer } from 'antd/es/layout/layout';
 import ContactUs from './Components/Pages/ContactUs';
+import Register from './Components/Pages/Register';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
          <Route path='/admin-login' element={<AdminLogin/>}/>
          <Route path='/admin_pannel' element={<AdminPannel/>}/>
          <Route path='/user-login'  element ={<UserLogin/>}/>
+         <Route path='/registerUser' element={<Register/>}/>
          <Route path='/trainer_dashboard' element={<TrainerDashboard/>}/>
          <Route path='/services' element={<Services/>}/>
          <Route path='/about' element = {<AboutUs/>}/>

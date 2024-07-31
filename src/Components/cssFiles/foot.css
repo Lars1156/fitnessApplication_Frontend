@@ -1,5 +1,5 @@
 .footer {
-    background: #001529;
+    background: #fdfdfd;
     color: #fff;
     padding: 40px 0;
   }
@@ -15,7 +15,7 @@
   }
   
   .footer a {
-    color: #fff;
+    color: #4106f4;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
@@ -31,7 +31,7 @@
   
   .social-icon {
     font-size: 24px;
-    color: #fff;
+    color: #1b21c5;
     margin: 0 10px;
   }
   

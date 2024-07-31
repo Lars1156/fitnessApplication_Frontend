@@ -66,7 +66,7 @@ const UserLogin = () => {
         </div>
         <div className="register-link-container">
           <span>Don't have an account? </span>
-          <Link to="/register">
+          <Link to="/registerUser">
             <Button type="link">Register</Button>
           </Link>
         </div>
